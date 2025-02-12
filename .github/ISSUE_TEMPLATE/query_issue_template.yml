@@ -1,0 +1,59 @@
+name: Hackathon Query
+description: Template for submitting queries during the hackathon
+title: "[QUERY]"
+labels: ["query"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this query form!
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Select the project related to your query.
+      options:
+        - Keyshade
+        - Raven
+        - API-Dash
+        - FOSS United Platform
+    validations:
+      required: true
+  - type: input
+    id: languages
+    attributes:
+      label: Languages Involved
+      description: List the languages involved in your query.
+      placeholder: ex. Python, JavaScript
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the category related to your query.
+      options:
+        - Frontend
+        - Backend
+        - Database
+        - Mobile
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: difficulty
+    attributes:
+      label: Difficulty
+      description: Describe the difficulty level of your query.
+      placeholder: ex. Beginner, Intermediate, Advanced
+    validations:
+      required: true
+  - type: textarea
+    id: query
+    attributes:
+      label: Query
+      description: Describe your query in detail.
+      placeholder: Provide a detailed description of your query.
+    validations:
+      required: true
